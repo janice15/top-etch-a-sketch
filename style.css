@@ -1,0 +1,17 @@
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    width: 600px;
+    height: 600px;
+    border-color: black;
+
+}
+
+.div-square {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;
+}
