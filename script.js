@@ -12,6 +12,7 @@ function getSize() {
 
 function drawGrid(size) {
   const gridContainer = document.querySelector("#grid-container");
+  gridContainer.textContent = "";
   for (let i = 0; i < size * size; i++) {
     const square = document.createElement("div");
     square.classList.add("div-square");
