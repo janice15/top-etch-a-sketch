@@ -10,6 +10,8 @@ function getSize() {
   }
 }
 
+
+
 function drawGrid(size) {
   const gridContainer = document.querySelector("#grid-container");
   gridContainer.textContent = "";
@@ -19,9 +21,18 @@ function drawGrid(size) {
     let gridSize = 100 / size + "%";
     square.style.width = gridSize;
     square.style.height = gridSize;
+
+    square.addEventListener(
+      "mouseenter",
+      (event) => {
+        square.style.backgroundColor = "#35c6ee";
+      },
+      false,
+    );
+
     gridContainer.append(square);
   }
 }
 
 btn.addEventListener("click", getSize);
-// drawGrid(64);
+drawGrid(16);
